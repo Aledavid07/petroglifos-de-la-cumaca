@@ -1,0 +1,150 @@
+<html>
+<head>
+  <title>Title of the document</title>
+</head>
+
+<style>
+    body {
+      background-color: rgb(208, 241, 154);
+      font-family: sans-serif;
+    }
+    
+    .featured{
+
+        padding: 32px;
+        border-radius: 4px;
+        background-color: rgb(241, 255, 219);
+        width: 75vw;
+    }
+
+    .main-flex{
+
+        display: flex;
+        flex-direction: row;
+        height: 1000px;
+
+    }
+
+
+    .sidebar{
+
+      width: 25vw;
+      padding: 24px;
+      background-color: rgb(191, 212, 97);
+
+    }
+
+    .sidebar-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar-list ul li{
+
+      margin-top: 8px;
+
+    }
+
+    .sidebar-list-title{
+
+      font-size: 24px;
+
+    }
+
+    .title-img{
+
+      margin: auto;
+
+    }
+
+    .logos{
+
+      display: flex;
+
+      gap: 24px;
+
+      flex-direction: column;
+
+      position: absolute;
+      
+
+    }
+
+    .logo-img{
+
+      width: 96px;
+
+    }
+
+</style>
+
+<body>
+
+
+    <div class="main-flex">
+
+      <div class="sidebar">
+        <div class="sidebar-container">
+
+          <div class="sidebar-list estaciones-list">
+            <p class="sidebar-list-title">Estaciones</p>
+            <ul>
+              <li>
+                El Corozo
+              </li>
+              <li>
+                Altar de la Virgen
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-list about-list">
+            <p class="sidebar-list-title">Sobre Nosotros</p>
+            <ul>
+              <li>
+                Los Petroglifos
+              </li>
+              <li>
+                Sofia
+              </li>
+              <li>
+                Piedra
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      
+      
+      <div class="featured">
+
+        <div class="logos">
+        
+        <img class="logo-img" src="images/uc-logo.png" alt="Logo de la Universidad de Carabobo.">
+        <img class="logo-img" src="images/desco-logo.png" alt="Logo de la Universidad de Carabobo.">
+        <img class="logo-img" src="images/semarve-logo.jpg" alt="Logo de la Universidad de Carabobo.">
+        <img class="logo-img" src="images/tacarigua-logo.png" alt="Logo de la Universidad de Carabobo.">
+
+      </div>
+        <div style="display: flex; justify-content: center; height: inherit; width: inherit;">
+
+          <div  style=" padding: 8px; background-color: rgba(0,0,0, .25);">
+            <img src="images/title.png" alt="Imagen del titulo que dice Petroglifos La Cumaca." class="title-img">
+          </div>
+          
+
+        </div>
+      </div>
+
+        
+
+   </div>
+
+    </div>
+
+   
+
+</body>
+
+</html>
