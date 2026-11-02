@@ -1,230 +1,27 @@
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Title of the document</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
-<style>
-    body {
-      background-color: rgb(208, 241, 154);
-      font-family: sans-serif;
-    }
-    
-    .featured{
-
-        padding: 32px;
-        border-radius: 4px;
-        background-color: rgb(241, 255, 219);
-        width: 75vw;
-
-        display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
-    }
-
-    .main-flex{
-
-        display: flex;
-        flex-direction: row;
-        height: 1000px;
-
-    }
-
-
-    .sidebar{
-
-      width: 25vw;
-      padding: 24px;
-      background-color: rgb(191, 212, 97);
-
-    }
-
-    .sidebar-container{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .sidebar-list ul li{
-
-      margin-top: 8px;
-
-    }
-
-    .sidebar-list-title{
-
-      font-size: 24px;
-
-    }
-
-    .title-img{
-
-      margin: auto;
-
-    }
-
-    .logos{
-
-      display: flex;
-
-      gap: 24px;
-
-      flex-direction: column;
-
-      position: absolute;
-      
-
-    }
-
-    .logo-img{
-
-      width: 64px;
-
-    }
-
-    .header-bar{
-
-      margin: 24px auto;
-      padding: 18px 0;
-      background-color: rgb(191, 212, 97);
-
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 8px;
-
-    }
-
-    .featured-content{
-
-      background-color: white;
-
-      flex: 1;
-
-      padding: 16px;
-
-    }
-
-    .featured-content p{
-
-      margin: 8px;
-      line-height: 30px;
-      color: rgb(48, 48, 51);
-
-    }
-
-    .header-bar-btn{
-
-      background-color: rgb(241, 255, 219);
-      color: rgb(41, 63, 26);
-      padding: 8px;
-
-    }
-
-</style>
 
 <body>
 
+  <!-- Unique content of this page -->
+  <template id="page-content">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac felis eu turpis sodales rutrum...
+    </p>
+    <img src="images/image.png" alt="galleta de queso de torta">
+    <a href="estaciones.html">
+      <button>Ano</button>
+    </a>
+  </template>
 
-    <div class="main-flex">
+  <!-- The layout gets loaded here -->
+  <div id="layout" data-layout="components/layout.html"></div>
 
-      <div class="sidebar">
-        <div class="sidebar-container">
-
-          <div class="sidebar-list estaciones-list">
-            <p class="sidebar-list-title">Estaciones</p>
-            <ul>
-              <li>
-                El Corozo
-              </li>
-              <li>
-                Altar de la Virgen
-              </li>
-            </ul>
-          </div>
-
-          <div class="sidebar-list about-list">
-            <p class="sidebar-list-title">Sobre Nosotros</p>
-            <ul>
-              <li>
-                Los Petroglifos
-              </li>
-              <li>
-                Sofia
-              </li>
-              <li>
-                Piedra
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-      
-      
-      <div class="featured">
-
-        <div class="logos">
-        
-        <img class="logo-img" src="images/uc-logo.png" alt="Logo de la Universidad de Carabobo.">
-        <img class="logo-img" src="images/desco-logo.png" alt="Logo de la Universidad de Carabobo.">
-        <img class="logo-img" src="images/semarve-logo.jpg" alt="Logo de la Universidad de Carabobo.">
-        <img class="logo-img" src="images/tacarigua-logo.png" alt="Logo de la Universidad de Carabobo.">
-    
-        
-        </div>
-
-        <div style="display: flex; justify-content: center; height: inherit; width: inherit;">
-
-          <div  style="padding: 8px; margin: 32px 0; background-color: rgba(0,0,0, .25);">
-            <img src="images/title.png" alt="Imagen del titulo que dice Petroglifos La Cumaca." class="title-img">
-          </div>
-          
-
-
-        
-        </div>
-        
-        <div class="featured-content">
-          
-          <div class="header-bar">
-  
-            <button class="header-bar-btn" >
-              El Corozo.
-            </button>
-            <button class="header-bar-btn" >
-              El Corozo.
-            </button>
-            <button class="header-bar-btn" >
-              El Corozo.
-            </button>
-            <button class="header-bar-btn" >
-              El Corozo.
-            </button>
-  
-          </div>
-
-          <p >
-
-            
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac felis eu turpis sodales rutrum. Morbi ante odio, efficitur vel pulvinar ac, feugiat in nisi. Pellentesque ac diam eget mi faucibus laoreet a tempor libero. Duis luctus tempor blandit. Integer convallis augue in lacus rutrum venenatis. Praesent facilisis purus nulla. Aenean tempor feugiat neque. Fusce et ex magna. Mauris auctor justo et massa suscipit, sed tristique urna hendrerit. Integer consequat, arcu eu consectetur sodales, dolor velit eleifend sapien, at porttitor ipsum ante vitae eros. Nunc aliquet feugiat ligula, in.
-
-          </p>
-
-          <img src="images/image.png" alt="galleta de queso de torta">
-
-        </div>
-
-      
-
-      </div>
-
-        
-
-   </div>
-
-    </div>
-
-   
+  <script src="js/layout.js"></script>
 
 </body>
-
 </html>
