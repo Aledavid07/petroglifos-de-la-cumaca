@@ -1,351 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic:wght@400..700&display=swap');
 
-    body {
-        background-color: rgb(189, 241, 154);
-        font-family: sans-serif;
-    }
 
-    h1{
-        width: inherit;
-        font-size: 36px;
-        margin: 8px 0;
-        margin-bottom: 18px;
+body {
+    background-color: rgb(189, 241, 154);
+    font-family: 'Roboto', sans-serif
+}
 
-        font-weight: 200;
+h1{
+    width: inherit;
+    font-size: 36px;
+    margin: 8px 0;
+    margin-bottom: 18px;
 
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    h5{
-        text-transform: capitalize;
-        font-weight: bold;
-
-        font-size: 14px;
-        color: #646464;
-        margin: 8px 0;
-
-    }
-
-    h2{
-        font-size: 28px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 400;
-
-        margin-bottom: 8px;
-    }
-
-    .main-flex{
-
-        display: flex;
-        flex-direction: row;
-        
-        width: 1400px;
-        min-height: 100vh;
-        margin: 0 auto;
-
-    }
-
-    .featured{
-        border-radius: 4px;
-        background-color: rgb(241, 255, 219);
-        width: 75vw;
-
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        box-sizing: border-box;
-    }
-
-    .featured-content{
-
-        background-color: white;
-        flex-grow: 1;    
-
-    }
-
-    .text-content p{
-        line-height: 25px;
-        font-size: 16px;
-        margin-bottom: 48px;
-        color: #202122;
-    }
-
-    .featured-content-container{
-        padding: 0 64px;
-        padding-bottom: 32px;
-    }
-
-    .header-bar{
-
-        padding: 18px 0;
-        height: 32px;
-        margin: 0 auto;
-        margin-bottom: 32px;
-        background-color: rgb(207, 243, 160);
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 8px;
-
-    }
-
-
-    .header-bar-btn{
-
-        background-color: rgb(241, 255, 219);
-        color: rgb(41, 63, 26);
-        padding: 8px;
-
-    }
-
-    .sidebar{
-
-        width: 12vw;
-        padding: 24px;
-        background-color:  white;
-
-
-    }
-
-    .sidebar-container{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .sidebar-list ul li{
-
-        margin-top: 8px;
-
-    }
-
-    .sidebar-list-title{
-
-        font-size: 24px;
-
-    }
-
-    .title-img{
-
-        margin: auto;
-
-    }
-
-    .logos{
-
-        display: flex;
-        display: none;
-
-        gap: 24px;
-
-        flex-direction: column;
-
-        position: absolute;
-        
-        right: 1340;
-        
-
-    }
-
-    .logo-img{
-
-        width: 64px;
-
-    }
-
-
-    .intro-title{
-        text-transform: uppercase;
-        font-size: 42px;
-        margin-bottom: 96px;
-    }
-
-    .intro-text{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .intro-img{
-        height: 480px;
-        width: auto;
-    }
-
-    .intro-subtitle{
-        font-weight: bold;
-        color: #3b3b3b;
-        margin-left: 28px;
-        margin-top: 0;
-        font-size: 28px;
-    }
-
-    .intro-paragraph{
-        line-height: 1.7;
-        margin-top: 42px;   
-    }
-    
-
-
-
-    .petro-flex{
-
-        display: flex;
-        flex-direction: row;
-
-        justify-content: left;
-        
-        gap: 32px;
-        
-
-    }
-
-    .petro-card{
-        margin-bottom: 48px;
-        display: flex;
-        flex-direction: row;
-
-        justify-content: stretch;
-        gap:32px;
-
-        width: 80%;
-
-        background-color: rgb(223, 243, 209);
-        padding: 16px 28px ;
-        
-        border: 1px solid rgb(109, 161, 75);
-
-        border-radius: 8px;
-
-        margin: 0 auto;
-
-    }
-
-    .petro-card-img{    
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-        width: 50%;
-    }
-
-    .petro-card-img p:first-child{
-        margin: 0;
-        margin-bottom: 8px; 
-        font-size: 18px;
-        font-weight: bold;
-        color: black;
-    }    
+    font-weight: bold;
 
     
-    .petro-img{
-        width: 100%;        
-        height: auto;
-        
-        aspect-ratio: 1/1;
+}
 
-        border-radius: 8px;
-    }
+h5{
+    text-transform: capitalize;
+    font-weight: bold;
 
-    .credit-text{
+    font-size: 14px;
+    color: #646464;
+    margin: 8px 0;
 
-        margin: 0;
-        margin-top: 8px;
-        font-size: 13px;
-        
-        color: #3b3b3b;
-        
-    }
+}
 
-    .info-list{
-        display: flex;
-        flex-direction: column;
-        
-        width: 75%;
+h2{
+    font-size: 28px;
+    
+    font-weight: 400;
 
-        border: 1px solid #a5a5a5;
-        padding: 10px 18px;
+    margin-bottom: 8px;
+}
 
-        background-color: #fafafa;
-        border-radius: 8px;
+.main-flex{
 
-        margin: 0 auto;
-        margin-top: 64px;
-        margin-bottom: 128px;
+    display: flex;
+    flex-direction: row;
+    
+    width: 1400px;
+    min-height: 100vh;
+    margin: 0 auto;
 
-    }
+}
 
-    .info-column{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+.featured{
+    border-radius: 4px;
+    background-color: rgb(241, 255, 219);
+    width: 75vw;
 
-        height: 42px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
 
-        font-size: 20px;
-    }
+.featured-content{
 
-    .info-column span{
-        font-size: 13px;
-    }
+    background-color: white;
+    flex-grow: 1;    
 
-    .info-column-value{
-        width: 400;
-    }
+}
 
-    .info-column span:first-of-type{
-        text-transform:uppercase;
-        font-weight: bold;
-        font-size: 16px;
-    }
+.text-content p{
+    line-height: 25px;
+    font-size: 16px;
+    margin-bottom: 48px;
+    color: #202122;
+}
 
-    .separator{
+.featured-content-container{
+    padding: 0 64px;
+    padding-bottom: 32px;
+}
 
-        height: 1px;
-        width: 98%;
-        margin: 4px auto;
-        background-color: #bbbbbb;
+.header-bar{
 
-    }
+    padding: 18px 0;
+    height: 48px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    background-color: rgb(207, 243, 160);
 
-    .text-content .separator{
-        margin: 0 0;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
 
-    .ficha-list{
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .ficha-list li{
-        margin-bottom: 24px;
-    }
-
-    .ficha-card{
-        margin-left: 16px;
-        background-color: #bbbbbb;
-
-        background-color: rgb(223, 243, 209);
-        border: 1px solid rgb(109, 161, 75);
-        border-radius: 8px;
-        
-        padding: 12px;
-        width: 30em;
-    }
+}
 
 
-    .ficha-card-container{
-        display: flex;
-        gap: 32px;
-    }
+.header-bar-btn {
+    background-color: rgb(241, 255, 219);
+    color: rgb(19, 32, 10);
 
-    .ficha-card-thumbnail{
-        width: 128px;
-    }
+    font-size: 15px;
+    padding: 16px 20px;
+    border: 1px solid rgb(109, 161, 75);
+    border-radius: 4px;
 
-    .ficha-card-text h2{
-        text-transform: uppercase;
-        font-family: sans-serif;
-        margin-top: 12px;
-        font-weight: bold;
-        font-size: 20px;
-        color: #3b3b3b;
-    }
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.header-bar-btn:hover {
+    background-color: rgb(225, 247, 190);
+    box-shadow: 0 2px 6px rgba(19, 32, 10, 0.2);
+}
+
+.header-bar-btn:active {
+    background-color: rgb(207, 235, 165);
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.sidebar{
+
+    width: 12vw;
+    padding: 24px;
+    background-color:  white;
+
+
+}
+
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-list ul li{
+
+    margin-top: 8px;
+
+}
+
+.sidebar-list-title{
+
+    font-size: 24px;
+
+}
+
+.title-img{
+
+    margin: auto;
+
+}
+
+.logos{
+
+    display: flex;
+    display: none;
+
+    gap: 24px;
+
+    flex-direction: column;
+
+    position: absolute;
+    
+    right: 1340;
+    
+
+}
+
+.logo-img{
+
+    width: 64px;
+
+}
+
+
+.intro-title{
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 96px;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-img{
+    height: 480px;
+    border-radius: 8px;
+    width: auto;
+}
+
+.intro-subtitle{
+    font-weight: bold;
+    color: #3b3b3b;
+    
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.intro-paragraph{
+    line-height: 1.7;
+    margin-top: 42px;   
+}
+
+
+
+
+.petro-flex{
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: left;
+    
+    gap: 32px;
+    
+
+}
+
+.petro-card{
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: stretch;
+    gap:32px;
+
+    width: 80%;
+
+    background-color: rgb(223, 243, 209);
+    padding: 16px 28px ;
+    
+    border: 1px solid rgb(109, 161, 75);
+
+    border-radius: 8px;
+
+    margin: 0 auto;
+
+}
+
+.petro-card-img{    
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 50%;
+}
+
+.petro-card-img p:first-child{
+    margin: 0;
+    margin-bottom: 8px; 
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}    
+
+
+.petro-img{
+    width: 100%;        
+    height: auto;
+    
+    aspect-ratio: 1/1;
+
+    border-radius: 8px;
+}
+
+.credit-text{
+
+    margin: 0;
+    margin-top: 8px;
+    font-size: 13px;
+    
+    color: #3b3b3b;
+    
+}
+
+.info-list{
+    display: flex;
+    flex-direction: column;
+    
+    width: 75%;
+
+    border: 1px solid #a5a5a5;
+    padding: 10px 18px;
+
+    background-color: #fafafa;
+    border-radius: 8px;
+
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 128px;
+
+}
+
+.info-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 42px;
+
+    font-size: 20px;
+}
+
+.info-column span{
+    font-size: 13px;
+}
+
+.info-column-value{
+    width: 400;
+}
+
+.info-column span:first-of-type{
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.separator{
+
+    height: 1px;
+    width: 98%;
+    margin: 4px auto;
+    background-color: #bbbbbb;
+
+}
+
+.text-content .separator{
+    margin: 0 0;
+}
+
+.ficha-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.ficha-list li{
+    margin-bottom: 24px;
+}
+
+.ficha-card {
+    margin-left: 16px;
+    background-color: rgb(223, 243, 209);
+    border: 1px solid rgb(109, 161, 75);
+    border-radius: 8px;
+
+    padding: 12px;
+    width: 30em;
+
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ficha-card:hover {
+    background-color: rgb(212, 237, 195);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(19, 32, 10, 0.2);
+}
+
+.ficha-card:active {
+    background-color: rgb(200, 229, 181);
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgba(19, 32, 10, 0.2);
+}
+
+
+.ficha-card-container{
+    display: flex;
+    gap: 32px;
+}
+
+.ficha-card-thumbnail{
+    width: 128px;
+}
+
+.ficha-card-text h2{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3b3b3b;
+}
