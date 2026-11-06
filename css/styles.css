@@ -9,6 +9,10 @@
         font-size: 36px;
         margin: 8px 0;
         margin-bottom: 18px;
+
+        font-weight: 200;
+
+        font-family: 'Times New Roman', Times, serif;
     }
 
     h5{
@@ -21,9 +25,26 @@
 
     }
 
-    .featured{
+    h2{
+        font-size: 28px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 400;
 
-        padding: 32px;
+        margin-bottom: 8px;
+    }
+
+    .main-flex{
+
+        display: flex;
+        flex-direction: row;
+        
+        width: 1400px;
+        min-height: 100vh;
+        margin: 0 auto;
+
+    }
+
+    .featured{
         border-radius: 4px;
         background-color: rgb(241, 255, 219);
         width: 75vw;
@@ -34,26 +55,59 @@
         box-sizing: border-box;
     }
 
-    .main-flex{
+    .featured-content{
 
-        display: flex;
-        flex-direction: row;
-        
+        background-color: white;
+        flex-grow: 1;    
 
     }
 
+    .text-content p{
+        line-height: 25px;
+        font-size: 16px;
+        margin-bottom: 48px;
+        color: #202122;
+    }
+
+    .featured-content-container{
+        padding: 0 64px;
+        padding-bottom: 32px;
+    }
+
+    .header-bar{
+
+        padding: 18px 0;
+        height: 32px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+        background-color: rgb(207, 243, 160);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+
+    }
+
+
+    .header-bar-btn{
+
+        background-color: rgb(241, 255, 219);
+        color: rgb(41, 63, 26);
+        padding: 8px;
+
+    }
 
     .sidebar{
 
         width: 12vw;
         padding: 24px;
-        background-color:  rgb(149, 212, 97);
+        background-color:  white;
 
 
     }
 
     .sidebar-container{
-        position: fixed;
         display: flex;
         flex-direction: column;
     }
@@ -79,12 +133,15 @@
     .logos{
 
         display: flex;
+        display: none;
 
         gap: 24px;
 
         flex-direction: column;
 
         position: absolute;
+        
+        right: 1340;
         
 
     }
@@ -95,46 +152,38 @@
 
     }
 
-    .header-bar{
 
-        padding: 18px 0;
-        width: 1200;
-        height: 32px;
-        margin: 0 auto;
-        margin-bottom: 32px;
-        background-color: rgb(149, 212, 97);
+    .intro-title{
+        text-transform: uppercase;
+        font-size: 64px;
+        margin-bottom: 96px;
+    }
 
+    .intro-text{
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 8px;
-
     }
 
-    .featured-content{
-
-        background-color: white;
-        width: 1200px;
-        margin: 0 auto;
-
+    .intro-img{
+        height: 400px;
+        width: auto;
     }
 
-    .featured-content p{
-        line-height: 30px;
+    .intro-subtitle{
+        font-weight: bold;
+        color: #3b3b3b;
+        margin-left: 28px;
+        margin-top: 0;
+        font-size: 28px;
     }
 
-    .featured-content-container{
-        padding: 0 86px;
-        padding-bottom: 32px;
+    .intro-paragraph{
+        line-height: 1.7;
+        margin-top: 42px;   
     }
+    
 
-    .header-bar-btn{
 
-        background-color: rgb(241, 255, 219);
-        color: rgb(41, 63, 26);
-        padding: 8px;
-
-    }
 
     .petro-flex{
 
@@ -238,6 +287,10 @@
         font-size: 13px;
     }
 
+    .info-column-value{
+        width: 400;
+    }
+
     .info-column span:first-of-type{
         text-transform:uppercase;
         font-weight: bold;
@@ -251,4 +304,48 @@
         margin: 4px auto;
         background-color: #bbbbbb;
 
+    }
+
+    .text-content .separator{
+        margin: 0 0;
+    }
+
+    .ficha-list{
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .ficha-list li{
+        margin-bottom: 24px;
+    }
+
+    .ficha-card{
+        margin-left: 16px;
+        background-color: #bbbbbb;
+
+        background-color: rgb(223, 243, 209);
+        border: 1px solid rgb(109, 161, 75);
+        border-radius: 8px;
+        
+        padding: 12px;
+        width: 30em;
+    }
+
+
+    .ficha-card-container{
+        display: flex;
+        gap: 32px;
+    }
+
+    .ficha-card-thumbnail{
+        width: 128px;
+    }
+
+    .ficha-card-text h2{
+        text-transform: uppercase;
+        font-family: sans-serif;
+        margin-top: 12px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #3b3b3b;
     }

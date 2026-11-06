@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Estación: {{name}}</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Unique content of this page -->
+  <template id="page-content">
+    <h1 style="margin-bottom: 48px;">ESTACIÓN: {{name_upper}}</h1>
+{{intro_html}}
+    <ul class="ficha-list">
+{{cards}}
+    </ul>
+  </template>
+
+  <!-- The layout gets loaded here -->
+  <div id="layout" data-layout="components/layout.html"></div>
+
+  <script src="js/layout.js"></script>
+
+</body>
+</html>

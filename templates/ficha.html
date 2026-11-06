@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{name}} - {{station_name}}</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Unique content of this page -->
+  <template id="page-content">
+    <h1>FICHA DESCRIPTIVA - {{name_upper}}</h1>
+    <h5><a href="{{station_url}}">ESTACIÓN: {{station_upper}}</a></h5>
+    <h3 style="margin-bottom: 96px;">{{motive}}</h3>
+
+    <div class="petro-card">
+{{images}}
+    </div>
+
+    <div class="info-list">
+{{specs}}
+    </div>
+
+    <div class="text-content">
+{{extra_html}}
+    </div>
+  </template>
+
+  <!-- The layout gets loaded here -->
+  <div id="layout" data-layout="components/layout.html"></div>
+
+  <script src="js/layout.js"></script>
+
+</body>
+</html>
