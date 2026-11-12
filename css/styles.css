@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic:wght@400..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
+
+
 
 body {
     background-color: rgb(189, 241, 154);
@@ -21,14 +24,14 @@ h5{
     text-transform: capitalize;
     font-weight: bold;
 
-    font-size: 14px;
+    font-size: 16px;
     color: #646464;
     margin: 8px 0;
 
 }
 
 h2{
-    font-size: 28px;
+    font-size: 32px;
     
     font-weight: 400;
 
@@ -49,31 +52,21 @@ h2{
 .featured{
     border-radius: 4px;
     background-color: rgb(241, 255, 219);
-    width: 75vw;
+    width: 80%;
 
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    
     box-sizing: border-box;
+
+    position: relative;
 }
 
-.featured-content{
-
-    background-color: white;
-    flex-grow: 1;    
-
-}
-
-.text-content p{
-    line-height: 25px;
-    font-size: 16px;
-    margin-bottom: 48px;
-    color: #202122;
-}
-
-.featured-content-container{
-    padding: 0 64px;
-    padding-bottom: 32px;
+.banner{
+    display: flex;
+    justify-content: center;
+    height: inherit;    
+    background-color: rgb(207, 243, 160);
 }
 
 .header-bar{
@@ -81,7 +74,7 @@ h2{
     padding: 18px 0;
     height: 48px;
     margin: 0 auto;
-    margin-bottom: 32px;
+    margin-bottom: 124px;
     background-color: rgb(207, 243, 160);
 
     display: flex;
@@ -89,8 +82,20 @@ h2{
     justify-content: center;
     gap: 8px;
 
+    position: relative;
+
 }
 
+.header-gradient{
+    position: absolute;
+    width: 100% ;
+    height: 82px;
+    
+    background: #CFF3A0;
+    background: linear-gradient(180deg,rgba(207, 243, 160, 1) 0%, rgba(207, 243, 160, 0) 100%);
+
+    top: 100%;
+}
 
 .header-bar-btn {
     background-color: rgb(241, 255, 219);
@@ -116,10 +121,31 @@ h2{
     box-shadow: none;
 }
 
+.featured-content{
+
+    background-color: white;
+    flex-grow: 1;    
+    
+
+}
+
+.text-content p{
+    line-height: 25px;
+    font-size: 16px;
+    margin-bottom: 48px;
+    color: #202122;
+}
+
+.featured-content-container{
+    padding: 0 64px;
+    padding-bottom: 32px;
+}
+
 .sidebar{
 
     width: 12vw;
     padding: 24px;
+    padding-left: 38px;
     background-color:  white;
 
 
@@ -130,15 +156,22 @@ h2{
     flex-direction: column;
 }
 
+.sidebar-list ul{
+    padding-left: 24px;
+}
+
 .sidebar-list ul li{
 
-    margin-top: 8px;
+    margin-top: 16px;
 
 }
 
 .sidebar-list-title{
 
     font-size: 24px;
+    font-weight: bold;
+    color: #3b3b3b;
+    text-transform: uppercase;
 
 }
 
@@ -151,54 +184,85 @@ h2{
 .logos{
 
     display: flex;
-    display: none;
+    
 
-    gap: 24px;
-
+    gap: 16px;
     flex-direction: column;
 
-    position: absolute;
+    position: absolute; 
     
-    right: 1340;
-    
+    left: 30;
+    top: 20;
 
 }
 
 .logo-img{
 
-    width: 64px;
+    width: 56px;
 
 }
 
+
+.box{
+    background-color: #e8fad0;
+    padding: 18px;
+    border: 1px solid rgb(109, 161, 75);
+    border-radius: 4px;
+}
 
 .intro-title{
     text-transform: uppercase;
-    font-size: 42px;
-    margin-bottom: 96px;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Wellfleet", serif;
 }
 
-.intro-text{
+
+.intro-subtitle{
+    
+    color: #505050;
+    
+    margin-bottom: 82px;
+
+    margin-top: 24px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.image-text-flex{
     display: flex;
     flex-direction: row;
+
+    align-items: center;
+
+    gap: 28px;
+
+}
+
+.cv-image-text-flex{
+    display: flex;
+    flex-direction: row;
+
+    align-items: start;
+    justify-content: space-between;
+
+    gap:16px
 }
 
 .intro-img{
-    height: 480px;
+    height: 316px;
     border-radius: 8px;
     width: auto;
 }
 
-.intro-subtitle{
-    font-weight: bold;
-    color: #3b3b3b;
-    
-    margin-top: 0;
-    font-size: 28px;
-}
 
 .intro-paragraph{
     line-height: 1.7;
-    margin-top: 42px;   
+    
+    margin-top: 0;
+    font-weight: 400;
+    color: #2d441f;
+    font-size: 20px;
 }
 
 
@@ -321,12 +385,15 @@ h2{
     height: 1px;
     width: 98%;
     margin: 4px auto;
+    margin-bottom: 18px;
+    
     background-color: #bbbbbb;
 
 }
 
 .text-content .separator{
-    margin: 0 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .ficha-list{
@@ -381,3 +448,55 @@ h2{
     font-size: 20px;
     color: #3b3b3b;
 }
+
+.cvl-section-title {
+  margin: 40px 0 8px;
+  font-size: 1.25rem;
+}
+
+.cvl-section-title:first-child {
+  margin-top: 0;
+}
+
+.cvl-list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+}
+
+.cvl-item {
+  display: flex;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #646464;
+}
+
+.cvl-year {
+  flex: 0 0 130px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #2c2c2c;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 480px) {
+  .cvl-item {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .cvl-year {
+    flex: none;
+  }
+}
+
+.cv-img{
+    border-radius: 8px;
+    width: 400px;
+}
+
+.cv-text h1{
+    font-size: 28px;
+}
+
