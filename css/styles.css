@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
+
+
 :root{
 
     --color-bg-content: #faf9f8;
@@ -5,12 +10,6 @@
     --color-hero: #f4e8d3;
     --hero-image-opacity: 0.75;   /* 0 = invisible, 1 = full image */
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic:wght@400..700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
-
-
 
 body {
     background-color: #eedec5;
@@ -54,11 +53,10 @@ h2{
 
     display: flex;
     flex-direction: row;
-    
-    width: 1400px;
-    min-height: 100vh;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
-
+    justify-content: center;
 }
 
 .featured{
