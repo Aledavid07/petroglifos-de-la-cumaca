@@ -28,6 +28,7 @@ h1{
 
     font-weight: bold;
 
+    font-family: "Wellfleet", serif;
     
 }
 
@@ -524,6 +525,7 @@ h2{
 
 .cv-text h1{
     font-size: 28px;
+    margin-bottom: 16px;
 }
 
 
@@ -639,4 +641,16 @@ h2{
  
 .hero .header-bar {
     margin-bottom: 0;
+}
+
+/* Créditos — links inside the people list */
+.hes-name a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #a8895c;
+  text-underline-offset: 3px;
+}
+
+.hes-name a:hover {
+  color: #7a5a2c;
 }
