@@ -496,6 +496,10 @@ h2{
     width: 400px;
 }
 
+.cv-text{
+    margin-left: 16px;
+}
+
 .cv-text h1{
     font-size: 28px;
 }
