@@ -64,7 +64,7 @@ h2{
 .featured{
     border-radius: 4px;
     background-color: var(--color-bg-content);
-    width: 80%;
+    width: 70%;
 
     display: flex;
     flex-direction: column;
@@ -226,7 +226,7 @@ h2{
 .intro-title{
     text-transform: uppercase;
     text-align: center;
-    font-size: 64px;
+    font-size: 55px;
     font-family: "Wellfleet", serif;
 }
 
@@ -238,7 +238,7 @@ h2{
     margin-bottom: 82px;
 
     margin-top: 24px;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -263,19 +263,19 @@ h2{
 }
 
 .intro-img{
-    height: 316px;
+    height: 340px;
     border-radius: 8px;
     width: auto;
 }
 
 
 .intro-paragraph{
-    line-height: 1.7;
+    line-height: 1.6;
     
     margin-top: 0;
     font-weight: 400;
     color: #4a3822;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 
@@ -335,7 +335,7 @@ h2{
     width: 100%;        
     height: auto;
     
-    aspect-ratio: 1/1;
+    
 
     border-radius: 8px;
 }
@@ -409,6 +409,12 @@ h2{
     margin-right: 0;
 }
 
+.text-content{
+
+    width: 100%;
+
+}
+
 .ficha-list{
     list-style-type: none;
     padding: 0;
@@ -450,7 +456,12 @@ h2{
 }
 
 .ficha-card-thumbnail{
+    height: 128px;
+    width: auto;            /* width follows the image's aspect ratio */
+    flex: 0 0 auto;         /* never grow or shrink inside the flex row */
+    align-self: flex-start; /* sits at the top instead of stretching */
     width: 128px;
+    object-fit: cover;
 }
 
 .ficha-card-text h2{
