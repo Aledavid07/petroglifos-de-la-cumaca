@@ -3,6 +3,11 @@
 Builds one HTML page per row of data/fichas.csv (from templates/ficha.html)
 and one page per row of data/estaciones.csv (from templates/estacion.html).
 
+Images for each ficha are found automatically, using the ficha's slug:
+    images/petroglifos/<slug>/<slug>.jpg|png             -> IMAGEN IN SITU
+    images/petroglifos/<slug>/<slug>-negative.jpg|png    -> DIBUJO EN NEGATIVO
+    (-negativo is also accepted as the suffix)
+
 Usage:  python build.py
 Output: ficha-<slug>.html and estacion-<slug>.html, written next to this
         script (the site root), so the relative paths to css/, js/, images/
@@ -19,6 +24,8 @@ ROOT = Path(__file__).resolve().parent
 OUTPUT_DIR = ROOT                      # change if you want a different output folder
 TEMPLATES = ROOT / "templates"
 DATA = ROOT / "data"
+IMAGES = ROOT / "images" / "petroglifos"
+IMAGE_EXTENSIONS = (".jpg", ".png")
 
 
 def slugify(text):
@@ -39,6 +46,18 @@ def read_csv(path):
         sys.exit(f"ERROR: missing file {path}")
     with open(path, newline="", encoding="utf-8-sig") as f:
         return list(csv.DictReader(f))
+
+
+def find_image(slug, suffixes=("",)):
+    """Return the site-relative path of images/petroglifos/<slug>/<slug><suffix>.<ext>,
+    or "" if no such file exists. Tries each suffix, then each extension, in order."""
+    folder = IMAGES / slug
+    for suffix in suffixes:
+        for ext in IMAGE_EXTENSIONS:
+            path = folder / f"{slug}{suffix}{ext}"
+            if path.exists():
+                return path.relative_to(ROOT).as_posix()
+    return ""
 
 
 def ficha_url(ficha):
@@ -106,6 +125,12 @@ def main():
         e["slug"] = (e.get("slug") or slugify(e["name"])).strip()
     for f in fichas:
         f["slug"] = (f.get("slug") or slugify(f["name"])).strip()
+        f["image_insitu"] = find_image(f["slug"])
+        f["image_negative"] = find_image(f["slug"], ("-negative", "-negativo"))
+        if not f["image_insitu"]:
+            print(f"WARNING: no in-situ image for '{f['slug']}' (expected images/petroglifos/{f['slug']}/{f['slug']}.jpg or .png)")
+        if not f["image_negative"]:
+            print(f"WARNING: no negative image for '{f['slug']}' (expected images/petroglifos/{f['slug']}/{f['slug']}-negative.jpg or .png)")
 
     # Lookup stations by slug or by name (so the CSV can use either)
     lookup = {}
