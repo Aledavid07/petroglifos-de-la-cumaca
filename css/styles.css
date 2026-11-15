@@ -167,23 +167,66 @@ h2{
     flex-direction: column;
 }
 
-.sidebar-list ul{
-    padding-left: 24px;
-}
+/* Each group of links is a small card, in the same palette as .info-list */
+.sidebar-list{
+    
 
-.sidebar-list ul li{
-
-    margin-top: 16px;
-
+    padding: 14px 12px 10px;
+    margin-bottom: 18px;
 }
 
 .sidebar-list-title{
+    margin: 0 0 10px;
+    padding: 0 4px 8px;
 
-    font-size: 24px;
+    font-size: 19px;
     font-weight: bold;
-    color: #3b3b3b;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    color: #7a5a2c;
 
+    border-bottom: 1px solid #c9b999;
+}
+
+.sidebar-list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-list ul li{
+    margin: 0 0 2px;
+}
+
+.sidebar-list a{
+    display: block;
+    padding: 6px 8px;
+
+    font-size: 14px;
+    line-height: 1.35;
+    color: #4a3822;
+    text-decoration: none;
+
+    border-left: 3px solid transparent;
+    border-radius: 4px;
+}
+
+.sidebar-list a:hover{
+    background-color: #f3e7d0;
+    border-left-color: #a8895c;
+    color: #2e2113;
+}
+
+.sidebar-list a:focus-visible{
+    outline: 2px solid #8a6d3b;
+    outline-offset: 1px;
+}
+
+/* small arrow on links that leave the site */
+.sidebar-list a[href^="http"]::after{
+    content: " \2197";
+    font-size: 12px;
+    color: #a8895c;
 }
 
 .title-img{
