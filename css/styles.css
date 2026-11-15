@@ -896,3 +896,18 @@ img.previewable:focus-visible {
 .gal-actions {
   margin-top: 12px;
 }
+
+
+/* Glosario — links inside .hes-list (referencias) */
+
+.hes-list a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #a8895c;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.hes-list a:hover {
+  color: #7a5a2c;
+}
