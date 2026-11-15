@@ -78,7 +78,7 @@ function initImagePreview(root) {
     const big = box.querySelector(".lightbox-img");
     const caption = box.querySelector(".lightbox-caption");
 
-    big.src = source.currentSrc || source.src;
+    big.src = source.dataset.full || source.currentSrc || source.src;   // data-full = larger version for the preview
     big.alt = source.alt;
     caption.textContent = source.alt;
     caption.hidden = !source.alt;
