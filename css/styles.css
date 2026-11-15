@@ -562,6 +562,17 @@ h2{
   margin-bottom: 12px;
 }
 
+/* Smaller, tighter version of .hes-list (used for the cohort name lists) */
+.hes-list-compact {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+
+.hes-list-compact li {
+  margin-bottom: 4px;
+}
+
 .hes-people {
   list-style: none;
   margin: 0 0 48px;
