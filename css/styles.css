@@ -765,3 +765,91 @@ img.previewable:focus-visible {
     font-size: 26px;
   }
 }
+
+
+/* ---------------------------------------------------------------
+   Galerías (fotos, petroglifos vectorizados, pósters)
+   --------------------------------------------------------------- */
+
+.text-center {
+  text-align: center;
+}
+
+.gal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  align-items: start;
+  margin: 0 0 48px;
+}
+
+.gal-grid-posters {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+/* Centered version: cards keep a fixed width and every row (including
+   an incomplete last row) is centered. Used by Petroglifos Vectorizados. */
+.gal-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  margin: 32px 0 64px;
+}
+
+.gal-flex .gal-item {
+  width: 240px;
+  max-width: 100%;
+  justify-content: center;   /* cards stretched to a row's height keep their content centered */
+}
+
+.gal-item {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #f3e7d0;
+  border: 1px solid #a8895c;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.gal-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Same-size image area for every drawing; the drawing is scaled to fit
+   inside it and centered, so nothing is cropped or stretched. */
+.gal-img-fixed {
+  height: 210px;
+  object-fit: contain;
+  object-position: center;
+  background-color: #fbf8f1;
+}
+
+.gal-name {
+  margin: 10px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.gal-caption {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: italic;
+  color: #3b3b3b;
+  text-align: center;
+}
+
+.gal-actions {
+  margin-top: 12px;
+}
